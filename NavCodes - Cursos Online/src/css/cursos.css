@@ -1,0 +1,300 @@
+/* Estilos Gerais */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7c1b97;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    color: #000000;
+    border-color: #000;
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center; /* Isso já está presente */
+    margin-bottom: 20px;
+    width: 100%; /* Adicione isso para garantir que o título ocupe toda a largura */
+}
+
+.subtitle:after {
+    content: '';           
+    display: block;        
+    width: 60px;           /* Largura da linha abaixo do texto */
+    height: 3px;           /* Altura da linha */
+    background-color: #000; /* Cor da linha */
+    margin: 8px auto;      /* Centraliza a linha abaixo do título */
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3f0a7c;
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-logo {
+    width: 230px;
+}
+
+.header-menu {
+    text-align: right;
+}
+
+.header-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header-menu ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.header-menu ul li a:hover {
+    color: #000;
+}
+
+/* Introdução */
+
+.introduction {
+    width: 100%;
+    height: 180px;
+    background: url('../img/roxo-claro.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 90px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.introduction h1 {
+    font-size: 48px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Seção de vídeos e links */
+.secao-curso {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.descricao-curso {
+    font-size: 20px; /* Tamanho da fonte para a descrição */
+    margin-bottom: 20px; /* Já existente */
+    color: #000000; /* Já existente */
+    line-height: 1.5; /* Já existente */
+    text-align: center; /* Centraliza o texto da descrição */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Garante que o conteúdo se alinhe verticalmente */
+}
+
+.curso-conteudo {
+    display: flex; /* Muda para flexbox */
+    gap: 30px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Ajuste para evitar que quebre o layout */
+}
+
+.curso-video {
+    flex: 0 0 auto; /* Garante que a coluna do vídeo não se expanda */
+    margin-left: 200px; /* Margem à esquerda para posicionar um pouco mais à direita */
+    width: 700px; /* Largura fixa do vídeo */
+    max-width: 100%; /* Garante que o vídeo não quebre em telas menores */
+}
+
+.curso-video iframe {
+    width: 100%; /* Ajusta a largura do iframe para 100% do container */
+    height: 450px; /* Altura fixa do iframe */
+    border: none;
+}
+
+.curso-lista {
+    flex: 1; /* A lista ocupará 1 parte do espaço */
+    max-width: 450px; /* Largura máxima para a lista de vídeos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 15px; /* Espaçamento interno */
+    background: linear-gradient(to bottom, #5f0892, #ab47bc); /* Gradiente de roxo escuro para roxo claro */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: #fff;
+    font-size: 20px;
+}
+
+.curso-lista a {
+    color: white; /* Cor dos links em branco */
+    text-decoration: none; /* Remove a decoração dos links */
+    padding: 20px;
+}
+
+.curso-lista a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #f8cfffb0;
+}
+
+.titulo-lista {
+    text-align: center; /* Alinha o título ao centro */
+    font-size: 40px; /* Aumenta a fonte do título */
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-lista {
+    margin-bottom: 10px; /* Espaço entre os itens */
+    cursor: pointer; /* Muda o cursor ao passar sobre o item */
+}
+
+.sub-lista {
+    display: none; /* Inicialmente escondida */
+    list-style: none; /* Remove a marcação da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.sub-lista li {
+    margin-top: 5px; /* Espaço entre os links da sub-lista */
+    font-size: 16px; /* Ajusta a fonte */
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #5f0892;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.footer h3:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #5f0892;
+    margin: 6px 0 12px 0;
+}
+
+.footer-historia {
+    padding-right: 60px;
+}
+
+.footer-contato ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.footer-redes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-redes ul li a {
+    border: 3px solid #5f0892;
+    display: block;
+    padding: 10px;
+}
+
+.footer-redes ul li a:hover {
+    border-color: #fff;
+}
+
+.footer-redes ul li a img {
+    width: 32px;
+    height: 32px;
+}
+
+.copy {
+    width: 100%;
+    background-color: #5f0892;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* JavaScript */
+
+/* Animação */
+
+.js [data-anime] {
+    opacity: 0;
+}
+
+.js .fadeInDown {
+    transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 0.8s;
+}

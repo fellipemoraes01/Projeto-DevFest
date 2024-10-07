@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: ArchivoNarrow-Bold
+font link: https://fonts.google.com/specimen/Archivo+Narrow
+font author: Omnibus-Type
+font author site: http://www.omnibus-type.com/
+
+
+icon designer: Jason Early
+icon designer link: /jasonearly
+        
+{"bg":"transparent","icon-gradient-0":"#B4373D","icon-gradient-1":"#B23ACB","font":"#000000","slogan":"#141414"}
+      

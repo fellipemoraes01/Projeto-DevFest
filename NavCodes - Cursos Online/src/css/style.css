@@ -1,0 +1,440 @@
+
+/* Estilos Gerais */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7c1b97;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  color: #000000;
+  border-color: #000;
+}
+
+.btn.btn-white:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitle:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+  margin: 8px auto;
+}
+
+.inner-subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.inner-subtitle:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+  margin: 8px 0;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3f0a7c;
+  padding: 15px 0;
+  z-index: 10;
+}
+
+.header-menu {
+  text-align: right;
+}
+
+.header-menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.header-menu ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.header-menu ul li a:hover {
+  color: #000;
+}
+
+.header-menu ul li a.menu-active {
+  color: #000;
+}
+
+.header-logo {
+  width: 500px;
+}
+
+/* Introdução */
+
+.introduction {
+  width: 100%;
+  height: 300px;
+  background: url('../img/roxo-claro.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: 90px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.introduction h1 {
+  font-size: 48px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Introdução Interna */
+
+.inner-introduction {
+  width: 100%;
+  margin-top: 90px;
+  height: 160px;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.inner-introduction h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.inner-introduction h1:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px auto 10px auto;
+}
+
+/* cursos */
+
+.cursos {
+  padding: 60px 0;
+}
+
+.cursos .subtitle {
+  color: #000000;
+}
+
+.cursos .subtitle:after {
+  background-color: #000000;
+}
+
+.cursos-lista li {
+  background-color: #5f0892;
+  text-align: center;
+}
+
+/* Necessário para centralizar as imagens */
+.cursos-lista li img {
+  margin: 0 auto;
+  height: 150px;
+}
+
+.cursos-lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.cursos-lista li h3:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 2px auto;
+}
+
+.cursos-lista li p {
+  padding: 10px 20px 20px 20px;
+  color: #fff;
+}
+
+.cursos-icone {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.call-to-action {
+  padding: 40px;
+  text-align: center;
+  clear: both;
+}
+
+.call-to-action p {
+  margin-bottom: 20px;
+}
+
+/* Sobre Nós */
+
+.sobre {
+  padding: 40px 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+.sobre .subtitle {
+  color: #5f0892;
+}
+
+.sobre .subtitle:after {
+  background-color: #5f0892;
+}
+
+.sobre-lista li:last-child {
+  margin-top: 20px;
+}
+
+.sobre .call-to-action p {
+  color: #fff;
+}
+
+/* Nosso Diferencial */
+
+.diferencial {
+  padding: 60px 0;
+}
+
+.diferencial:after {
+  content: '';
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url('../img/linhas.svg') no-repeat center;
+  position: absolute;
+  top: 188px;
+  right: 162px;
+  z-index: -1;
+}
+
+.diferencial img {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.diferencial-lista {
+  padding-top: 100px;
+  overflow: auto; /* clear-fix */
+}
+
+.diferencial-lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.diferencial-lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.diferencial-lista li h3:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px auto;
+}
+
+/* Preço */
+
+.precos {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.planos {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.plano {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plano h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.plano .preco {
+  font-size: 2em;
+  color: #00c896;
+  margin-bottom: 20px;
+}
+
+.plano ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plano ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.destaque {
+  background-color: #7c1b97;
+  color: white;
+}
+
+.destaque .btn {
+  background-color: #00c896;
+  color: #ffffff;
+}
+
+
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #5f0892;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer h3:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #5f0892;
+  margin: 6px 0 12px 0;
+}
+
+.footer-historia {
+  padding-right: 60px;
+}
+
+.footer-contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.footer-redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-redes ul li a {
+  border: 3px solid #5f0892;
+  display: block;
+  padding: 10px;
+}
+
+.footer-redes ul li a:hover {
+  border-color: #fff;
+}
+
+.footer-redes ul li a img {
+  width: 32px;
+  height: 32px;
+}
+
+.copy {
+  width: 100%;
+  background-color: #5f0892;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+/* JavaScript */
+
+/* Animação */
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}

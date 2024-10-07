@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NavCodes - Ensino e Preparação</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="NavLOGO/FAVICON/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="NavLOGO/FAVICON/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="NavLOGO/FAVICON/apple-touch-icon.png" />
+    <link rel="android-chrome" sizes="192x192" href="NavLOGO/FAVICON/android-chrome-192x192.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="grid-4">
+                <img class="header-logo" src="NavLOGO/vector/novaLogo.svg" alt="Logo NavCodes" />
+            </a>
+            <nav class="header-menu grid-12">
+                <ul>
+                    <li><a href="acessar.html" id="link-cursos">Acessar</a></li>
+                    <li><a href="#cursos" id="link-cursos">Cursos</a></li>
+                    <li><a href="#sobre" id="link-sobre">Sobre</a></li>
+                    <li><a href="#contato" id="link-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Introdução -->
+    <section class="introduction">
+        <div class="container">
+            <h1 data-anime="400" class="fadeInDown">Navegue em Busca do Conhecimento</h1>
+            <blockquote data-anime="800" class="fadeInDown quote-externo">
+                <p>“Desbrave o Mundo da Programação.”</p>
+            </blockquote>
+            <a href="acessar.html" data-anime="1200" class="fadeInDown btn">Navegue Aqui</a>
+        </div>
+    </section>
+
+    <!-- Cursos -->
+    <section class="container cursos" id="cursos">
+        <h2 class="subtitle">Cursos</h2>
+        <ul class="cursos-lista">
+            <li class="grid-1-3">
+                <div class="cursos-icone">
+                    <img src="NavLOGO/img/programacao.png" alt="NavCodes Programação" />
+                </div>
+                <h3>Programação</h3>
+                <p>Programe nas principais linguagens e plataformas.</p>
+            </li>
+            <li class="grid-1-3">
+                <div class="cursos-icone">
+                    <img src="NavLOGO/img/desing2.png" alt="NavCodes Design" />
+                </div>
+                <h3>Design</h3>
+                <p>Crie soluções funcionais e esteticamente atraentes para resolver problemas.</p>
+            </li>
+            <li class="grid-1-3">
+                <div class="cursos-icone">
+                    <img src="NavLOGO/img/negocios.png" alt="NavCodes Negócios" />
+                </div>
+                <h3>Negócios</h3>
+                <p>Desenvolva sua visão estratégica e agregue valor aos negócios.</p>
+            </li>
+        </ul>
+        <div class="call-to-action">
+            <p>Clique aqui e explore o melhor a te oferecer!</p>
+            <a href="acessar.html" class="btn">Cursos</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2 class="subtitle">Sobre Nós</h2>
+            <ul class="sobre-lista">
+                <li class="grid-4">
+                    <img src="NavLOGO/img/trofeu.png" alt="NavCodes Troféu" />
+                </li>
+                <li class="grid-12">
+                    <p>Na NavCodes somos a #1 em ensino e qualificação do mercado.</p>
+                    <p>Acreditamos que a educação em tecnologia deve ser acessível, prática e dinâmica a todos. Desenvolvemos uma plataforma de ensino online focada em oferecer cursos de programação que preparam você para os desafios do mercado de trabalho.</p>
+                    <p>Navegue pelo conhecimento e conquiste suas metas com a NavCodes!</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Diferencial -->
+    <section class="diferencial container">
+        <h2 class="subtitle">Nosso Diferencial</h2>
+        <img src="NavLOGO/vector/default-monochrome.svg" alt="NavCodes" />
+        <ul class="diferencial-lista">
+            <li class="grid-1-3">
+                <h3>Praticidade</h3>
+                <p>Cursos desenvolvidos para otimizar seu tempo e aprendizado.</p>
+            </li>
+            <li class="grid-1-3">
+                <h3>Acessibilidade</h3>
+                <p>Preços justos e acessíveis para garantir o melhor aprendizado.</p>
+            </li>
+            <li class="grid-1-3">
+                <h3>Versatilidade</h3>
+                <p>Conteúdos variados para diferentes níveis e interesses.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Preços -->
+    <div class="precos container">
+        <h2 class="subtitle">Nossos Planos</h2>
+        <div class="planos">
+            <div class="plano">
+                <h3>Plano Básico</h3>
+                <p class="preco">R$29/mês</p>
+                <ul>
+                    <li>Acesso a cursos básicos</li>
+                    <li>Suporte via email</li>
+                    <li>Certificado digital</li>
+                </ul>
+                <a href="#" class="btn">Assinar Agora</a>
+            </div>
+            <div class="plano destaque">
+                <h3>Plano Pro</h3>
+                <p class="preco">R$59/mês</p>
+                <ul>
+                    <li>Acesso a todos os cursos</li>
+                    <li>Suporte 24/7</li>
+                    <li>Certificado digital</li>
+                    <li>Aulas ao vivo</li>
+                </ul>
+                <a href="#" class="btn destaque">Assinar Agora</a>
+            </div>
+            <div class="plano">
+                <h3>Plano Premium</h3>
+                <p class="preco">R$99/mês</p>
+                <ul>
+                    <li>Acesso a todos os cursos</li>
+                    <li>Suporte VIP</li>
+                    <li>Certificado digital</li>
+                    <li>Consultoria individual</li>
+                </ul>
+                <a href="#" class="btn">Assinar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="footer">
+            <div class="container">
+                <div class="grid-8 footer-historia">
+                    <h3>Nossa História</h3>
+                    <p>A NavCodes surgiu em 2024 com a missão de tornar o aprendizado de programação acessível para todos. Oferecemos cursos práticos e guiados para iniciantes e profissionais que desejam crescer na área de tecnologia. Venha navegar com a gente e conquistar suas metas!</p>
+                </div>
+                <div class="grid-4 footer-contato">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>- 34 99999-9999</li>
+                        <li>- contato@navcodes.com</li>
+                        <li>- Uberlândia - MG</li>
+                    </ul>
+                </div>
+                <div class="grid-4 footer-redes">
+                    <h3>Redes sociais</h3>
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com" target="_blank" aria-label="Facebook">
+                                <img src="img/redes-sociais/facebook.svg" alt="Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com" target="_blank" aria-label="Instagram">
+                                <img src="img/redes-sociais/instagram.svg" alt="Instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com" target="_blank" aria-label="Twitter">
+                                <img src="img/redes-sociais/twitter.svg" alt="Twitter" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 NavCodes - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/simple-anime.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
